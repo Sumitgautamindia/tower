@@ -1,0 +1,6 @@
+- name: Run command
+  hosts: web
+  tasks:
+    yum:
+      name: ftp
+      state: installed
