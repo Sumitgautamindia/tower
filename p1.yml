@@ -1,6 +1,7 @@
 - name: Run command
-  hosts: web
+  hosts: 13.58.147.19
   tasks:
-    yum:
-      name: ftp
+    apt:
+      name: apache
       state: installed
+      service: restarted
